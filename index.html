@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"  href="./css/index.css">
+    <title> [Engine Name] - World Edit </title>
+    <script> window.$ = window.jQuery = require('jquery'); </script>
+  </head>
+  <body>
+
+    <!-- Import TileMap Page -->
+    <div class="Page" id="page-import">
+
+      <!-- Import Image -->
+      <button class="Btn Normal" id="btn-import-image"> Import TileMap </button>
+
+      <!-- Import Level -->
+      <button class="Btn Normal" id="btn-import-level"> Import Level </button>
+
+      <!-- Imported Image Container -->
+      <div class="Container" id="container-import-image">
+      </div> <!-- Image Generated When Imported -->
+
+      <!-- Tile Images Container -->
+      <div class="Container" id="container-image-tiles">
+      </div> <!-- Generated After Import -->
+
+      <button class="Btn Normal Hide" id="btn-confirm"> Confirm Generation </button>
+      <button class="Btn Small Hide" id="btn-cancel"> Cancel </button>
+
+    </div>
+
+    <!-- Level Edit Page -->
+    <div class="Page Hide" id="page-edit">
+
+      <!-- Selectable Tiles -->
+      <div class="Container Flex-Row" id="container-select-tiles">
+      </div>
+
+      <!-- Set Level Dimensions -->
+      <div class="Container" id="container-input-dimensions">
+        Row: <input id="input-dimensions-row" placeholder="10" value="10"/>
+        Column: <input id="input-dimensions-column" placeholder="10" value="10"/>
+      </div>
+
+      <!-- Level Edit Container -->
+      <div class="Level" id="container-edit-level">
+      </div>
+
+      <!-- Export Level -->
+      <button class="Btn Normal" id="btn-export"> Export Level </button>
+      <button class="Btn Small" id="btn-back"> Back </button>
+
+    </div>
+
+    <script>
+      require('./renderer.js');
+    </script>
+  </body>
+</html>

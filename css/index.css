@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body { height: 100%; margin: 0; padding: 0; }
+
+.Page { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+    #page-import { height: 85%; }
+    #page-edit { }
+
+.Btn { font-family: 'Montserrat', sans-serif; border: 1px solid; border-radius: 3px; margin: 10px; outline: none; }
+.Btn:hover { cursor: pointer; background-color: darkgray; }
+.Btn:active { background-color: grey; border: 1px solid lightgrey;}
+    .Normal { height: 50px; width: 27%; font-size: 16px; }
+.Btn.Small { height: 35px; width: 15%; font-size: 14px; }
+    .Hide { display: none; }
+
+.Container { font-family: 'Montserrat', sans-serif; margin: 10px; }
+    .Container.Flex { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .Container.Flex-Row { display: flex; flex-direction: row; align-items: center; justify-content: center; }
+    .Container.Select { text-align: center; padding: 0 5px; }
+    .Container.Select:hover { cursor: pointer; }
+    .Container.Select p { margin: 0; padding: 0 }
+    .Container p { margin: 5px; padding: 0; }
+
+.Tile {
+    margin: 5px;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 1px grey;
+}
+.Tile.Small { margin: 0; border: none; box-shadow: none; width: 25px; }
+
+.Selectable { }
+    .Selectable:hover { border: 1px solid; cursor: pointer; }
+    .Selectable:active { border: 1px solid grey; cursor: pointer; }
+
+.Selected { border: 1px solid grey; border-radius: 3px; }
+
+/**
+ Level Editor
+*/
+.Level { display: flex; flex-direction: column; max-width: 900px; max-height: 600px; border: 1px solid; overflow: auto; }
+.Row { display: flex; flex-shrink: 0; }
+    .Placeable { width: 50px; height: 50px; margin: 2px; border: 1px solid; flex: none; }
+    .Placeable:hover { cursor: pointer; }
+
+    .Image.Hover { width: 100%; height: 100%; margin: 0; padding: 0; }
+    .Image.Placed { width: 100%; height: 100%; margin: 0; padding: 0; }
+
+
+
+@media only screen and (min-width: 1100px) {
+    .Level { max-width: 1000px; }
+}
+@media only screen and (min-height: 900px) {
+    .Level { max-height: 700px; }
+}
+@media only screen and (min-height: 950px) {
+    .Level { max-height: 750px; }
+}
+@media only screen and (min-width: 1200px) {
+    .Level { max-width: 1100px; }
+}
+@media only screen and (min-width: 1300px) {
+    .Level { max-width: 1200px; }
+}
+@media only screen and (min-width: 1400px) {
+    .Level { max-width: 1300px; }
+}
+@media only screen and (min-width: 1500px) {
+    .Level { max-width: 1400px; }
+}
+@media only screen and (min-width: 1600px) {
+    .Level { max-width: 1500px; }
+}
+@media only screen and (min-width: 1700px) {
+    .Level { max-width: 1600px; }
+}
+@media only screen and (min-width: 1800px) {
+    .Level { max-width: 1700px; }
+}
+@media only screen and (min-width: 1900px) {
+    .Level { max-width: 1800px; }
+}

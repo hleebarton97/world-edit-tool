@@ -1,0 +1,27 @@
+{
+  "name": "world-edit-tool",
+  "version": "1.0.0",
+  "description": "2D Tilemap level creator for the <engine-name> - 2D Platformer Game Engine ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.2"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0",
+    "jimp": "^0.6.0",
+    "jquery": "^3.3.1"
+  }
+}
