@@ -4,20 +4,22 @@
   "description": "2D Tilemap level creator for the <engine-name> - 2D Platformer Game Engine ",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "build --win",
+    "ship": "build --win -p always"
   },
-  "repository": "",
+  "repository": "https://github.com/hleebarton97/world-edit-tool.git",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Electron"
   ],
-  "author": "GitHub",
+  "win": {
+    "icon": "icon.ico"
+  },
+  "author": "Henry Lee Barton III",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^4.0.2"
+    "electron": "^4.0.2",
+    "electron-builder": "^20.38.5"
   },
   "dependencies": {
     "electron-reload": "^1.4.0",
