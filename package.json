@@ -1,6 +1,6 @@
 {
   "name": "world-edit-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "2D Tilemap level creator for the <engine-name> - 2D Platformer Game Engine ",
   "main": "main.js",
   "scripts": {

@@ -154,7 +154,7 @@ fileManip = {
                 let tilePath = '';
                 crops.forEach((tile, i) => {
                     // Generate path to tile image
-                    tempPath = '../temp/' + i + '.' + tile.getExtension();
+                    tempPath = './temp/' + i + '.' + tile.getExtension();
                     tilePath = path.join(__dirname, '../../' + tempPath);
                     _tilePaths.push(tilePath);
                     // Crop images to creat tile image
